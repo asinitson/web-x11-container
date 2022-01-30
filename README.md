@@ -40,7 +40,7 @@ Open [http://localhost:8080](http://localhost:8080) in a web browser.
 
 > NOTE: If you add your own script, [make sure it is executable](https://askubuntu.com/a/229592/982082).
 
-### 2. Rebuild and restart container with docker-compose v2
+### 2. Rebuild and restart container with docker-compose
 
 ```bash
 # Docker Compose v1
