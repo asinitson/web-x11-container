@@ -32,7 +32,16 @@ Graphical environment is accessible through web browser.
 
 ### 3. Connect to the graphical environment
 
+> NOTE: Fluxbox window manager might need some time to start on the first run.
+
 Open [http://localhost:8080](http://localhost:8080) in a web browser.
+
+### 4. Open terminal (Bash in `xterm`)
+
+Right click on the middle of the screen and navigate the menu:
+`Applications -> Shell -> Bash` as shown on a screenshot below.
+
+![Open Bash in `xterm`](./docs/fluxbox-open_bash_in_xterm.png)
 
 ## How add another process to autostart
 

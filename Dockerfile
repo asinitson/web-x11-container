@@ -5,9 +5,11 @@ FROM ubuntu:${OS_VERSION}
 RUN apt-get update \
     && apt-get install --assume-yes --no-install-recommends \
         # Graphical environment and multi-process management
+        fluxbox \
         supervisor \
         x11vnc \
         xbase-clients \
+        xterm \
         xvfb \
         \
         # Build time dependencies
@@ -47,13 +49,16 @@ RUN curl --location \
 RUN ln -s /novnc/vnc.html /novnc/index.html
 
 ############### Multi-process startup configuration
-COPY ./system/services /services
+COPY ./system/services/ /services/
 ADD ./system/supervisord.conf /etc/supervisord.conf
 
 ############### Graphical environment configuration
 ENV DISPLAY :0
 ENV RESOLUTION=1280x800
 ENV NOVNC_PORT=8080
+
+# Fluxbox
+COPY ./system/.fluxbox/ /root/.fluxbox/
 
 ############### Expose ports
 # noVNC
