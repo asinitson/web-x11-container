@@ -43,7 +43,7 @@ Right click on the middle of the screen and navigate the menu:
 
 ![Open Bash in `xterm`](./docs/fluxbox-open_bash_in_xterm.png)
 
-## How to add start another process automatically
+## How to start another process automatically
 
 ### 1. Add executable path to [./system/services/example_service.sh](./system/services/example_service.sh#L14)
 
